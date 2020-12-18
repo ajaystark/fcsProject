@@ -26,7 +26,7 @@ def encrypt_page():
         key=request.form['key']
         
         file_path=os.path.join(uploads_dir, secure_filename(file.filename))
-        temp_file_path=uploads_dir+'/temp/'+ secure_filename(file.filename)
+        temp_file_path=uploads_dir+'/'+secure_filename(file.filename)+'_temp'
         # temp_file_path_new=uploads_dir+'/'+'decoded_a/'+ secure_filename(file.filename)
         file.save(os.path.join(temp_file_path))
 
