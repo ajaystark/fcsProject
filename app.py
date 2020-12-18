@@ -17,7 +17,7 @@ def not_found(error=None):
     resp.status_code = 404
     return resp
 
-@app.route('/encrypt',methods=['GET','POST'])
+@app.route('',methods=['GET','POST'])
 def encrypt_page():
     if request.method=='GET':
         return render_template('encrypt.html')
