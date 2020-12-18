@@ -3,7 +3,6 @@ import json
 from datetime import datetime
 import os
 from werkzeug.utils import secure_filename
-from Crypto.Cipher import Blowfish
 
 uploads_dir='uploads'
 app = Flask(__name__,template_folder="templates",static_url_path='/static',static_folder='static')
